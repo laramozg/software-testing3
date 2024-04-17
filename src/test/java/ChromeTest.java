@@ -47,7 +47,7 @@ public class ChromeTest {
     void testAddQuestion() {
         auth();
         driver.findElement(By.xpath("//div[8]/a/span")).click();
-        driver.findElement(By.xpath("//a[contains(text(),'Помогите решить пример')]")).click();
+        driver.findElement(By.xpath("//a[contains(text(),'Помогите решить пример!')]")).click();
         driver.findElement(By.cssSelector(".eSyWe svg")).click();
         driver.findElement(By.xpath("//a[contains(text(),'Дополнить')]")).click();
         driver.findElement(By.xpath("//div[@id='question_additional']/div[2]/div/p")).sendKeys("Text");

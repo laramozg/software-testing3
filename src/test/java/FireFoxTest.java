@@ -29,7 +29,7 @@ public class FireFoxTest {
     void testLogin() throws InterruptedException {
         driver.findElement(By.xpath("//button[contains(.,'Войти')]")).click();
         driver.switchTo().frame(0);
-        Thread.sleep(200);
+
         driver.findElement(By.xpath("//input[@name='username']")).sendKeys("mozgovayalara23@mail.ru");
         driver.findElement(By.xpath("//span[contains(.,'Ввести пароль')]")).click();
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("lab3$777");
